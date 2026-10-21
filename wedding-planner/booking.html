@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book Your Wedding | EverAfter Weddings</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="site-header solid">
+
+    <div class="container nav">
+
+        <a class="logo" href="index.html">
+            EverAfter
+            <small>Weddings</small>
+        </a>
+
+        <button
+            class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="/wedding-planner/services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="/wedding-planner/gallery.html">
+                    Gallery
+                </a>
+            </li>
+
+            <li>
+                <a class="active" href="/wedding-planner/booking.html">
+                    Book
+                </a>
+            </li>
+
+            <li>
+                <a href="/wedding-planner/contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            Let's Begin
+        </span>
+
+        <h1>
+            Tell us about
+            <br>
+            your day.
+        </h1>
+
+        <p>
+            This is a visual mockup. The form looks
+            like a booking form, but no real reservation
+            is made.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="section">
+
+    <div class="container booking-layout">
+
+
+        <aside class="booking-info">
+
+            <span class="eyebrow">
+                Your First Step
+            </span>
+
+            <h2>
+                Imagine it.
+                Then let's plan it.
+            </h2>
+
+            <p>
+                Share a few details about your celebration
+                and our fictional planning team will be
+                “in touch” for the purposes of this mockup.
+            </p>
+
+            <ul>
+
+                <li>
+                    15-minute consultation
+                </li>
+
+                <li>
+                    Service recommendations
+                </li>
+
+                <li>
+                    Style and vision discussion
+                </li>
+
+                <li>
+                    No commitment required
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+
+        <form
+            class="form-card"
+            id="bookingForm"
+        >
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Alex & Jamie"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="date">
+                        Wedding Date
+                    </label>
+
+                    <input
+                        id="date"
+                        name="date"
+                        type="date"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="guests">
+                        Guest Count
+                    </label>
+
+                    <select
+                        id="guests"
+                        name="guests"
+                    >
+
+                        <option>
+                            Under 50
+                        </option>
+
+                        <option>
+                            50–100
+                        </option>
+
+                        <option>
+                            100–150
+                        </option>
+
+                        <option>
+                            150–250
+                        </option>
+
+                        <option>
+                            250+
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="service">
+                    Interested In
+                </label>
+
+                <select
+                    id="service"
+                    name="service"
+                >
+
+                    <option>
+                        Full Planning
+                    </option>
+
+                    <option>
+                        Event Design
+                    </option>
+
+                    <option>
+                        Day Of Coordination
+                    </option>
+
+                    <option>
+                        Elopement Planning
+                    </option>
+
+                    <option>
+                        I'm not sure yet
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="location">
+                    Wedding Location
+                </label>
+
+                <input
+                    id="location"
+                    name="location"
+                    type="text"
+                    placeholder="Venue or city"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Tell Us About Your Vision
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Colors, mood, guest experience, favorite details..."
+                ></textarea>
+
+            </div>
+
+
+
+            <button
+                class="btn btn-primary"
+                type="submit"
+            >
+                Request a Consultation
+            </button>
+
+
+            <p class="form-note">
+                Demo only — this button does not send
+                or store your information.
+            </p>
+
+
+        </form>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<div
+    class="toast"
+    id="toast"
+    aria-live="polite"
+></div>
+
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>
+                EverAfter
+            </h3>
+
+            <p>
+                Warm, intentional wedding planning
+                for modern romantics.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Explore
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="/wedding-planner/services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/wedding-planner/gallery.html">
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/wedding-planner/contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contact
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="mailto:hello@everafter.example">
+                        hello@everafter.example
+                    </a>
+                </li>
+
+                <li>
+                    Mon–Fri • 9am–5pm
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        ©
+        <span data-year></span>
+        EverAfter Weddings • Mockup Website
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
